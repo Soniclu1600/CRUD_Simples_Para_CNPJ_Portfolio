@@ -1,0 +1,95 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+a {
+    position: absolute;
+    bottom: 3rem;
+    left: 18rem;
+    text-decoration: none;
+    background-color: lightblue;
+    padding: 2rem;
+    border-radius: 40px;
+    font-size: 1.7rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-color: cornflowerblue;
+    border-style: solid;
+    border-width: 0.5rem;
+}
+
+a:hover {
+    background-color: aqua;
+    border-color: blueviolet;
+    border-style: dotted;
+}
+
+.searchButton {
+    position: absolute;
+    bottom: 15rem;
+    left: 46rem;
+    width: 30vw;
+    height: 5vh;
+    font-size: 2vh;
+    background-color: darkblue;
+    border-radius: 1vh;
+    border-color: darkblue;
+    border-style: solid;
+    border-width: 0.6vh;
+    color: white;
+}
+
+.searchButton:hover {
+    background-color: white;
+    color: darkblue;
+    border-color: aquamarine;
+    border-style: solid;
+    border-width: 0.6vh;
+}
+
+.loadingDiv {
+    position: absolute;
+    bottom: 5rem;
+    left: 52rem;
+    padding: 2rem;
+    border-radius: 40px;
+    border-width: 0.5rem;
+    width: 18rem;
+    height: 10rem;
+}
+
+.loadingText {
+    position: relative;
+    top: 0px;
+    font-size: 2vh;
+}
+
+@keyframes myAnim {
+    0%  {
+            width: 0%;
+            background-color: red;
+        }
+    25% {
+            width: 25%;
+            background-color: yellow;}
+    50% {
+            width: 50%;
+            background-color: blue;}
+    100%{   
+            width: 100%;
+            background-color: green;
+        }
+}
+
+.loadingAnim {
+    height: 2vw;
+    width: 2vw;
+    background-color: red;
+    animation-name: myAnim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
